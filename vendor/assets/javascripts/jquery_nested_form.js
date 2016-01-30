@@ -75,6 +75,7 @@
       
       var field = $link.closest('.fields');
       field.hide();
+      field.find('input').removeAttr('required max min maxlength pattern');
       
       field
         .trigger({ type: 'nested:fieldRemoved', field: field })
